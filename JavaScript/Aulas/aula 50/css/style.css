@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #f64c18, #ee9539);
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h2 {
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.060);
+}
+#tasks-container {
+    width: 500px;
+    margin: auto;
+}
+
+#tasks-header {
+    margin-top: 40px;
+}
+
+#add-task-form {
+    position: relative;
+}
+
+#add-task-form input {
+    box-sizing: border-box;
+    border: 1px solid #f64c18;
+    background-color: white;
+    color: #808080;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#add-task-form input:focus{
+    outline: none;
+}
+
+#add-task-form input::placeholder{
+    color: #808080;
+}
+
+#add {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ee6136;
+    border-radius: 2px 15px 15px 2px;
+    color: #808080;
+    cursor: pointer;
+    transition: .5s;
+    width: 60px;
+    height: 53px;
+    top: 0;
+    right: 0;
+}
+
+#add:hover {
+    background-color: #ee9539;
+    color: white;
+}
+
+#task-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#task-list li{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    background-color: white;
+    color: #333333;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: .5s;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.150);
+}
+
+#task-list span.material-symbols-outlined {
+    position: absolute;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    transition: .5s;
+    cursor: pointer;
+    padding: 12px 8px 8px 12px; 
+}
+
+#finished {
+    right: 50px;
+    border-radius: 2px;
+}
+
+#finished:hover {
+    background-color: #119822;
+    color: white;
+}
+
+#remove {
+    right: 0px;
+    border-radius: 2px 13px 13px 2px;
+}
+
+#remove:hover {
+    background-color: #ed0b1e;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+#task-list li.done {
+    background-color: #ee9539;
+    color: white;
+    text-decoration: line-through;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.050);
+}
